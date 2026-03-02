@@ -5,69 +5,117 @@ private let pixelFont = "VT323-Regular"
 struct TimerPopoverView: View {
     @ObservedObject var timerState: TimerState
     @ObservedObject var soundEngine: SoundEngine
-    @State private var customMinutes: Int = 25
+    @State private var selectedMinutes: Int? = 25
     @State private var showCustom = false
+    @State private var customMinutes: Int = 25
 
     var body: some View {
-        VStack(spacing: 12) {
-            Text("FOCUS TIMER")
-                .font(.custom(pixelFont, size: 18))
-                .foregroundColor(.white)
-
+        VStack(spacing: 14) {
             if showCustom {
                 customTimerPicker
             } else {
-                presetButtons
+                durationPicker
             }
-
-            Rectangle()
-                .fill(Color.white.opacity(0.08))
-                .frame(height: 1)
 
             // Sound toggle
             Button {
                 soundEngine.soundEnabled.toggle()
             } label: {
-                HStack(spacing: 6) {
+                HStack(spacing: 4) {
                     Text(soundEngine.soundEnabled ? "♪" : "♪")
-                        .font(.custom(pixelFont, size: 16))
-                    Text(soundEngine.soundEnabled ? "SOUND ON" : "SOUND OFF")
                         .font(.custom(pixelFont, size: 14))
+                    Text(soundEngine.soundEnabled ? "ON" : "OFF")
+                        .font(.custom(pixelFont, size: 13))
                 }
-                .foregroundColor(soundEngine.soundEnabled ? .white.opacity(0.8) : .white.opacity(0.3))
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 4)
+                .foregroundColor(soundEngine.soundEnabled ? .white.opacity(0.5) : .white.opacity(0.2))
             }
             .buttonStyle(.plain)
         }
-        .padding(14)
-        .frame(width: 250)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 10)
     }
 
-    private var presetButtons: some View {
-        VStack(spacing: 5) {
-            timerOption("NO TIMER") {
-                timerState.startNoTimer()
-            }
-            timerOption("10 MIN") {
-                timerState.start(minutes: 10)
-            }
-            timerOption("30 MIN") {
-                timerState.start(minutes: 30)
-            }
-            timerOption("60 MIN") {
-                timerState.start(minutes: 60)
+    private var durationPicker: some View {
+        VStack(spacing: 12) {
+            // Duration squares
+            HStack(spacing: 6) {
+                ForEach([15, 25, 45, 60], id: \.self) { mins in
+                    durationButton(mins)
+                }
+                // Auto (no timer)
+                Button {
+                    selectedMinutes = nil
+                } label: {
+                    Text("∞")
+                        .font(.custom(pixelFont, size: 20))
+                        .foregroundColor(selectedMinutes == nil ? .white : .white.opacity(0.5))
+                        .frame(width: 42, height: 42)
+                        .background(
+                            RoundedRectangle(cornerRadius: 6)
+                                .fill(selectedMinutes == nil ? Color.white.opacity(0.12) : Color.white.opacity(0.04))
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 6)
+                                .stroke(selectedMinutes == nil ? Color.white.opacity(0.5) : Color.white.opacity(0.1), lineWidth: 1)
+                        )
+                }
+                .buttonStyle(.plain)
             }
 
-            Rectangle()
-                .fill(Color.white.opacity(0.15))
-                .frame(height: 1)
-                .padding(.vertical, 2)
+            // Start button
+            Button {
+                if let mins = selectedMinutes {
+                    timerState.start(minutes: mins)
+                } else {
+                    timerState.startNoTimer()
+                }
+            } label: {
+                Text("START")
+                    .font(.custom(pixelFont, size: 18))
+                    .foregroundColor(.white.opacity(0.9))
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 8)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(Color.white.opacity(0.1))
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.white.opacity(0.15), lineWidth: 1)
+                    )
+            }
+            .buttonStyle(.plain)
 
-            timerOption("CUSTOM") {
+            // Custom option
+            Button {
                 withAnimation(.easeInOut(duration: 0.15)) { showCustom = true }
+            } label: {
+                Text("CUSTOM")
+                    .font(.custom(pixelFont, size: 13))
+                    .foregroundColor(.white.opacity(0.3))
             }
+            .buttonStyle(.plain)
         }
+    }
+
+    private func durationButton(_ mins: Int) -> some View {
+        Button {
+            selectedMinutes = mins
+        } label: {
+            Text("\(mins)")
+                .font(.custom(pixelFont, size: 20))
+                .foregroundColor(selectedMinutes == mins ? .white : .white.opacity(0.5))
+                .frame(width: 42, height: 42)
+                .background(
+                    RoundedRectangle(cornerRadius: 6)
+                        .fill(selectedMinutes == mins ? Color.white.opacity(0.12) : Color.white.opacity(0.04))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 6)
+                        .stroke(selectedMinutes == mins ? Color.white.opacity(0.5) : Color.white.opacity(0.1), lineWidth: 1)
+                )
+        }
+        .buttonStyle(.plain)
     }
 
     private var customTimerPicker: some View {
@@ -87,32 +135,32 @@ struct TimerPopoverView: View {
             .tint(.white)
 
             HStack(spacing: 8) {
-                timerOption("BACK") {
+                Button {
                     withAnimation(.easeInOut(duration: 0.15)) { showCustom = false }
+                } label: {
+                    Text("BACK")
+                        .font(.custom(pixelFont, size: 16))
+                        .foregroundColor(.white.opacity(0.5))
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 6)
+                        .background(RoundedRectangle(cornerRadius: 6).fill(Color.white.opacity(0.04)))
+                        .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.white.opacity(0.1), lineWidth: 1))
                 }
-                timerOption("START") {
+                .buttonStyle(.plain)
+
+                Button {
                     timerState.start(minutes: customMinutes)
+                } label: {
+                    Text("START")
+                        .font(.custom(pixelFont, size: 16))
+                        .foregroundColor(.white.opacity(0.9))
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 6)
+                        .background(RoundedRectangle(cornerRadius: 6).fill(Color.white.opacity(0.1)))
+                        .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.white.opacity(0.15), lineWidth: 1))
                 }
+                .buttonStyle(.plain)
             }
         }
-    }
-
-    private func timerOption(_ label: String, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Text(label)
-                .font(.custom(pixelFont, size: 16))
-                .foregroundColor(.white.opacity(0.8))
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 6)
-                .background(
-                    RoundedRectangle(cornerRadius: 3)
-                        .fill(Color.white.opacity(0.06))
-                )
-                .overlay(
-                    RoundedRectangle(cornerRadius: 3)
-                        .stroke(Color.white.opacity(0.12), lineWidth: 1)
-                )
-        }
-        .buttonStyle(.plain)
     }
 }

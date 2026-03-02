@@ -6,13 +6,36 @@ class CameraManager: NSObject, ObservableObject {
     private let sessionQueue = DispatchQueue(label: "camera.session")
     var onFrame: ((CMSampleBuffer) -> Void)?
 
-    @Published var isAuthorized = false
+    @Published var isAuthorized = AVCaptureDevice.authorizationStatus(for: .video) == .authorized
 
     func requestAccess() {
-        AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
-            DispatchQueue.main.async {
-                self?.isAuthorized = granted
-                if granted { self?.setupSession() }
+        let status = AVCaptureDevice.authorizationStatus(for: .video)
+
+        switch status {
+        case .authorized:
+            DispatchQueue.main.async { self.isAuthorized = true }
+            setupSession()
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
+                DispatchQueue.main.async {
+                    self?.isAuthorized = granted
+                    if granted { self?.setupSession() }
+                }
+            }
+        default:
+            DispatchQueue.main.async { self.isAuthorized = false }
+        }
+    }
+
+    /// Call periodically or after returning from Settings to re-check permission
+    func recheckAuthorization() {
+        let authorized = AVCaptureDevice.authorizationStatus(for: .video) == .authorized
+        DispatchQueue.main.async {
+            if authorized != self.isAuthorized {
+                self.isAuthorized = authorized
+                if authorized && !self.captureSession.isRunning {
+                    self.setupSession()
+                }
             }
         }
     }

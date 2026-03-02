@@ -11,5 +11,8 @@ DerivedData/
 # macOS
 .DS_Store
 
+# Secrets
+.env
+
 # xcodegen generates the project
 # Keep project.yml, regenerate with: xcodegen generate

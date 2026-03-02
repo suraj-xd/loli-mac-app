@@ -15,8 +15,10 @@ class NotchController: ObservableObject {
     let soundEngine = SoundEngine()
 
     private var focusUpdateTimer: Timer?
+    private var cameraRecheckTimer: Timer?
     private var sleepObserver: Any?
     private var wakeObserver: Any?
+    private var activateObserver: Any?
     private var cancellables = Set<AnyCancellable>()
     private var lastPhase: DistractionPhase = .none
 
@@ -38,6 +40,7 @@ class NotchController: ObservableObject {
 
         setupCamera()
         setupFocusLoop()
+        setupCameraRecheck()
         setupSleepWake()
         NotificationManager.requestPermission()
         soundEngine.setup()
@@ -115,6 +118,22 @@ class NotchController: ObservableObject {
         }
     }
 
+    private func setupCameraRecheck() {
+        // Re-check camera permission every 2s (catches Settings toggle without restart)
+        cameraRecheckTimer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { [weak self] _ in
+            Task { @MainActor in
+                self?.cameraManager.recheckAuthorization()
+            }
+        }
+
+        // Also recheck when app becomes active (user returning from Settings)
+        activateObserver = NotificationCenter.default.addObserver(
+            forName: NSApplication.didBecomeActiveNotification, object: nil, queue: .main
+        ) { [weak self] _ in
+            self?.cameraManager.recheckAuthorization()
+        }
+    }
+
     private func setupSleepWake() {
         sleepObserver = NSWorkspace.shared.notificationCenter.addObserver(
             forName: NSWorkspace.screensDidSleepNotification, object: nil, queue: .main
@@ -131,6 +150,8 @@ class NotchController: ObservableObject {
     func cleanup() {
         cameraManager.stop()
         focusUpdateTimer?.invalidate()
+        cameraRecheckTimer?.invalidate()
+        if let activateObserver { NotificationCenter.default.removeObserver(activateObserver) }
         if let sleepObserver { NSWorkspace.shared.notificationCenter.removeObserver(sleepObserver) }
         if let wakeObserver { NSWorkspace.shared.notificationCenter.removeObserver(wakeObserver) }
         Task {

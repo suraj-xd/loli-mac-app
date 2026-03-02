@@ -16,7 +16,7 @@ class TimerState: ObservableObject {
     @Published var mood: Mood = .normal
     @Published var isFocused: Bool = false
     @Published var showPopover: Bool = true
-    @Published var cameraAuthorized: Bool = true
+    @Published var cameraAuthorized: Bool = false
 
     // Distraction display state
     @Published var distractionPhase: DistractionPhase = .none
