@@ -1,0 +1,151 @@
+{
+  "" : {
+    "const-values" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck-primary.swiftconstvalues",
+    "dependencies" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck-primary.d",
+    "diagnostics" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck-primary.dia",
+    "emit-module-dependencies" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck-primary-emit-module.dia",
+    "pch" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck-primary.swiftdeps"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/resource_bundle_accessor.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Helpers/CryptoHashing.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/CryptoHashing.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/CryptoHashing.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/CryptoHashing.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Helpers/DictionaryExt.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/DictionaryExt.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/DictionaryExt.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/DictionaryExt.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Helpers/DurationSignalTracker.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/DurationSignalTracker.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/DurationSignalTracker.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/DurationSignalTracker.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Helpers/JSONFormatting.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/JSONFormatting.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/JSONFormatting.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/JSONFormatting.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Helpers/LogHandler.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/LogHandler.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/LogHandler.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/LogHandler.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Helpers/SessionManager.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SessionManager.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SessionManager.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SessionManager.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Helpers/TelemetryEnvironment.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryEnvironment.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryEnvironment.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryEnvironment.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Modifiers/TrackNavigationModifier.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TrackNavigationModifier.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TrackNavigationModifier.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TrackNavigationModifier.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/PirateMetrics/TelemetryDeck+Acquisition.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Acquisition.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Acquisition.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Acquisition.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/PirateMetrics/TelemetryDeck+Activation.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Activation.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Activation.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Activation.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/PirateMetrics/TelemetryDeck+Referral.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Referral.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Referral.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Referral.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/PirateMetrics/TelemetryDeck+Revenue.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Revenue.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Revenue.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Revenue.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Presets/AnyIdentifiableError.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/AnyIdentifiableError.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/AnyIdentifiableError.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/AnyIdentifiableError.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Presets/ErrorCategory.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/ErrorCategory.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/ErrorCategory.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/ErrorCategory.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Presets/IdentifiableError.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/IdentifiableError.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/IdentifiableError.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/IdentifiableError.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Presets/NavigationStatus.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/NavigationStatus.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/NavigationStatus.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/NavigationStatus.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Presets/TelemetryDeck+Errors.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Errors.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Errors.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Errors.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Presets/TelemetryDeck+Navigation.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Navigation.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Navigation.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Navigation.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Presets/TelemetryDeck+Purchases.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Purchases.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Purchases.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck+Purchases.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Presets/TrialConversionTracker.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TrialConversionTracker.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TrialConversionTracker.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TrialConversionTracker.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Signals/Signal+Helpers.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/Signal+Helpers.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/Signal+Helpers.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/Signal+Helpers.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Signals/Signal.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/Signal.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/Signal.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/Signal.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Signals/SignalCache.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SignalCache.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SignalCache.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SignalCache.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Signals/SignalEnricher.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SignalEnricher.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SignalEnricher.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SignalEnricher.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/Signals/SignalManager.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SignalManager.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SignalManager.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/SignalManager.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/TelemetryClient.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryClient.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryClient.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryClient.o"
+  },
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/SwiftSDK/Sources/TelemetryDeck/TelemetryDeck.swift" : {
+    "index-unit-output-path" : "/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck.o",
+    "llvm-bc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck.bc",
+    "object" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/TelemetryDeck.build/Release/TelemetryDeck.build/Objects-normal/arm64/TelemetryDeck.o"
+  }
+}

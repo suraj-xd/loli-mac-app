@@ -1,0 +1,24 @@
+# pack-refs with: peeled fully-peeled sorted 
+5f75aebd7b829948893248670298e26aea96cd15 refs/heads/39-floating-style-panels-always-hide-even-when-the-mouse-is-within-the-panel
+cd0b3e52d537db115ad3a9d89601f20e0bee8d27 refs/heads/main
+ed46b1da54b68cbfb873a8a9763bdd905f92193b refs/pull/11/head
+43abe6ed00cf5a08dd90009ee11e0761d099cfc9 refs/pull/12/head
+d682e78c7ee324f7de94ddfb80fed325dbfa669a refs/pull/13/head
+301b111c78775f8244ebb33f1a951dc7cf63e1f5 refs/pull/14/head
+e1ffc08b604d7c37b9203e359e36c13d379b455f refs/pull/15/head
+a08e4e2fe591cd5fa76fca538376d63e7e83becf refs/pull/17/head
+6686a30d8d90c57fb148484dab61df642b3ad60e refs/pull/19/head
+13707bfa6713d9f51d5db90f4525f9d5cb96ca25 refs/pull/20/head
+eef2522da1b70f9c6e04ed0a2f93b1f18e8ecd17 refs/pull/21/head
+4ea9f60d658f02a2e35e0833ce306b3bd6c33807 refs/pull/24/head
+176e6def3b23afb2b814a87de2adfc43b4ac3386 refs/pull/27/head
+06296721704c746dd38131b79da767927db491ee refs/pull/28/head
+c4baa73e2e5b4c81aa41ead874d5d8f0c20c35da refs/pull/29/head
+5f75aebd7b829948893248670298e26aea96cd15 refs/pull/41/head
+b1fa8a30170dbde25d282f70a360ef98dbf729cc refs/pull/42/head
+5a8d6009a5c84385880c5cc00ca2d242f7c35cd3 refs/pull/43/head
+e0f503369614f6ac95d1ccf29c357b30db3ad2da refs/pull/44/head
+aa49f77b01601329d1c05997099c6531923af739 refs/pull/45/head
+4e69d35902041e9a0dc02a76e087f720b5afe4f0 refs/pull/46/head
+e13aecf68c6519726aa5315f8fa4501c489ca574 refs/tags/0.1.0
+3c405930fd4d9f8498303683f32492c26d3a9b2b refs/tags/1.0.0

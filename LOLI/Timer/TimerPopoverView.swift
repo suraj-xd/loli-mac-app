@@ -5,7 +5,7 @@ private let pixelFont = "VT323-Regular"
 struct TimerPopoverView: View {
     @ObservedObject var timerState: TimerState
     @ObservedObject var soundEngine: SoundEngine
-    @State private var selectedMinutes: Int? = 25
+    @State private var selectedMinutes: Int = 0
     @State private var showCustom = false
     @State private var customMinutes: Int = 25
 
@@ -39,33 +39,15 @@ struct TimerPopoverView: View {
         VStack(spacing: 12) {
             // Duration squares
             HStack(spacing: 6) {
-                ForEach([15, 25, 45, 60], id: \.self) { mins in
+                ForEach([0, 15, 25, 45, 60], id: \.self) { mins in
                     durationButton(mins)
                 }
-                // Auto (no timer)
-                Button {
-                    selectedMinutes = nil
-                } label: {
-                    Text("∞")
-                        .font(.custom(pixelFont, size: 20))
-                        .foregroundColor(selectedMinutes == nil ? .white : .white.opacity(0.5))
-                        .frame(width: 42, height: 42)
-                        .background(
-                            RoundedRectangle(cornerRadius: 6)
-                                .fill(selectedMinutes == nil ? Color.white.opacity(0.12) : Color.white.opacity(0.04))
-                        )
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 6)
-                                .stroke(selectedMinutes == nil ? Color.white.opacity(0.5) : Color.white.opacity(0.1), lineWidth: 1)
-                        )
-                }
-                .buttonStyle(.plain)
             }
 
             // Start button
             Button {
-                if let mins = selectedMinutes {
-                    timerState.start(minutes: mins)
+                if selectedMinutes > 0 {
+                    timerState.start(minutes: selectedMinutes)
                 } else {
                     timerState.startNoTimer()
                 }
@@ -102,8 +84,8 @@ struct TimerPopoverView: View {
         Button {
             selectedMinutes = mins
         } label: {
-            Text("\(mins)")
-                .font(.custom(pixelFont, size: 20))
+            Text(mins == 0 ? "0:00" : "\(mins)")
+                .font(.custom(pixelFont, size: mins == 0 ? 15 : 20))
                 .foregroundColor(selectedMinutes == mins ? .white : .white.opacity(0.5))
                 .frame(width: 42, height: 42)
                 .background(

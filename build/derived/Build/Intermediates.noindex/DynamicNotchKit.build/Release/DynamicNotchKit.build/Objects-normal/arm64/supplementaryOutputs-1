@@ -1,0 +1,12 @@
+{
+  "/Users/suraj/xp/LOLI/build/derived/SourcePackages/checkouts/DynamicNotchKit/Sources/DynamicNotchKit/DynamicNotch/DynamicNotch.swift" : {
+    "abi-baseline-json" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/DynamicNotchKit.build/Release/DynamicNotchKit.build/Objects-normal/arm64/DynamicNotchKit.abi.json",
+    "const-values" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/DynamicNotchKit.build/Release/DynamicNotchKit.build/Objects-normal/arm64/DynamicNotchKit-primary.swiftconstvalues",
+    "dependencies" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/DynamicNotchKit.build/Release/DynamicNotchKit.build/Objects-normal/arm64/DynamicNotchKit-primary.d",
+    "diagnostics" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/DynamicNotchKit.build/Release/DynamicNotchKit.build/Objects-normal/arm64/DynamicNotchKit-primary.dia",
+    "objc-header" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/DynamicNotchKit.build/Release/DynamicNotchKit.build/Objects-normal/arm64/DynamicNotchKit-Swift.h",
+    "swiftdoc" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/DynamicNotchKit.build/Release/DynamicNotchKit.build/Objects-normal/arm64/DynamicNotchKit.swiftdoc",
+    "swiftmodule" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/DynamicNotchKit.build/Release/DynamicNotchKit.build/Objects-normal/arm64/DynamicNotchKit.swiftmodule",
+    "swiftsourceinfo" : "/Users/suraj/xp/LOLI/build/derived/Build/Intermediates.noindex/DynamicNotchKit.build/Release/DynamicNotchKit.build/Objects-normal/arm64/DynamicNotchKit.swiftsourceinfo"
+  }
+}
