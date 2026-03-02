@@ -39,6 +39,7 @@ targets:
         INFOPLIST_FILE: LOLI/Info.plist
         CODE_SIGN_ENTITLEMENTS: LOLI/LOLI.entitlements
         GENERATE_INFOPLIST_FILE: false
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
     dependencies:
       - package: DynamicNotchKit
       - package: Sparkle

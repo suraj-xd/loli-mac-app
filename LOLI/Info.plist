@@ -24,6 +24,8 @@
     <string>LOLI uses the camera to detect if you're focused on your screen.</string>
     <key>LSUIElement</key>
     <true/>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
     <key>ATSApplicationFontsPath</key>
     <string>Fonts</string>
     <key>SUFeedURL</key>
