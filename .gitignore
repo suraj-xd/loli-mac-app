@@ -14,5 +14,8 @@ DerivedData/
 # Secrets
 .env
 
+# Build artifacts
+build/
+
 # xcodegen generates the project
 # Keep project.yml, regenerate with: xcodegen generate

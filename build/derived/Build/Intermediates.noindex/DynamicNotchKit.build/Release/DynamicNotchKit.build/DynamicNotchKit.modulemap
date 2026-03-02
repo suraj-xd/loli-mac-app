@@ -1,4 +1,0 @@
-module DynamicNotchKit {
-header "DynamicNotchKit-Swift.h"
-export *
-}
