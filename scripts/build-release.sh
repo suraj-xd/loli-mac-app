@@ -32,6 +32,7 @@ APP_PATH="$BUILD_DIR/derived/Build/Products/Release/LOLI.app"
 echo "Signing app..."
 codesign --deep --force --options runtime \
   --sign "$IDENTITY" \
+  --entitlements "$ROOT_DIR/LOLI/LOLI.entitlements" \
   "$APP_PATH"
 
 codesign --verify --deep --strict "$APP_PATH"

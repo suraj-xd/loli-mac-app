@@ -10,7 +10,7 @@ VERSION="${1:-v1.0.0}"
 MSG="${2:-Release update}"
 
 echo "=== Committing & pushing ==="
-git add -A
+git add -A :/LOLI :/project.yml :/.gitignore :/scripts :/README.md :/assets
 git commit -m "$MSG" || echo "Nothing to commit"
 git push
 
