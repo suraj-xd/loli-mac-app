@@ -1,0 +1,15 @@
+# Xcode
+*.xcodeproj/
+xcuserdata/
+DerivedData/
+*.xcworkspace/
+.build/
+
+# SPM
+.swiftpm/
+
+# macOS
+.DS_Store
+
+# xcodegen generates the project
+# Keep project.yml, regenerate with: xcodegen generate
