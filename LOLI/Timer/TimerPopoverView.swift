@@ -11,6 +11,10 @@ struct TimerPopoverView: View {
 
     var body: some View {
         VStack(spacing: 14) {
+            // LOLI pet preview
+            RobotEyesView(mood: timerState.mood, phase: .none)
+                .frame(width: 120, height: 50)
+
             if showCustom {
                 customTimerPicker
             } else {

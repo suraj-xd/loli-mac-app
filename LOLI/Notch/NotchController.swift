@@ -98,10 +98,16 @@ class NotchController: ObservableObject {
     private func setupFocusLoop() {
         focusUpdateTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
             Task { @MainActor in
-                guard let self, self.timerState.isRunning else { return }
+                guard let self else { return }
 
                 self.focusMoodController.isTimerActive = self.timerState.isRunning
                 self.focusMoodController.update(isFocused: self.focusDetector.isFocused)
+
+                // Update mood for pet preview even when idle
+                self.timerState.mood = self.focusMoodController.mood
+                self.timerState.isFocused = self.focusDetector.isFocused
+
+                guard self.timerState.isRunning else { return }
 
                 let newPhase = self.focusMoodController.phase
 
@@ -110,8 +116,6 @@ class NotchController: ObservableObject {
 
                 // Update distraction phase for UI
                 self.timerState.distractionPhase = newPhase
-                self.timerState.mood = self.focusMoodController.mood
-                self.timerState.isFocused = self.focusDetector.isFocused
 
                 self.lastPhase = newPhase
             }

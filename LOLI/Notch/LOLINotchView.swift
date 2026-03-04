@@ -58,7 +58,7 @@ struct LOLIExpandedView: View {
 
     @ViewBuilder
     private var timerDisplay: some View {
-        let showTime = timerState.totalSeconds > 0 || timerState.distractionPhase == .angry || timerState.distractionPhase == .critical
+        let showTime = timerState.isRunning
 
         if showTime {
             Text(timerState.displayText)
